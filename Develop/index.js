@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
-//const fs = require('fs');
-// const generateMarkDown = require('./utils/generateMarkdown')
+const { writeFile } = require('./utils/generate-site');
+
 
 // array of questions for user
 const questions = () => {
@@ -42,25 +42,15 @@ const questions = () => {
     ]);
 };
 
-// function to write README file
-    // function writeToFile(fileName, data) {
-
-    // }
-
-    // fs.writeFile('./develop/dist/readme.md', , err => {
-    //     if (err) throw err;
-    //     console.log('File has been saved');
-    // })
-
 // function to initialize program
 function init() {
     questions()
-        // .then(x => {
-        //     return generateMarkdown(x);
-        // })
-        // .then(writeMarkDown => {
-        //     return writeFile(writeMarkDown);
-        // })
+        .then(questionsData => {
+            return generateMarkdown(questionsData);
+        })
+        .then(writeMarkDown => {
+            return writeFile(writeMarkDown);
+        })
 }
 
 // function call to initialize program

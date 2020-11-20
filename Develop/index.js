@@ -34,13 +34,13 @@ const questions = () => {
                 }
             }
         },
-            // TABLE OF CONTENTS
+            // TABLE OF CONTENTS *****
         {
             type: 'input',
             name: 'tableOfContents',
-            message: 'Enter a table of contents',
+            message: 'Enter a table of contents: (Max-5)',
         },
-            // INSTALLATION
+            // INSTALLATION *******
         {
             type: 'text',
             name: 'install',
@@ -50,13 +50,13 @@ const questions = () => {
         {
             type: 'input',
             name: 'usage',
-            message: 'Enter usage instructions'
+            message: 'Enter usage instructions: '
         },
-            // Contributing
+            // Contributing ********
         {
             type: 'input',
             name: 'contribute',
-            message: 'Enter contributing intructions'
+            message: 'Enter contributing intructions: '
         },
             // Tests
         {
@@ -64,11 +64,11 @@ const questions = () => {
             name: 'tests',
             message: 'Test out the code'
         },
-            // Questions 
+            // Questions Github
         {
             type: 'text',
             name: 'github',
-            message: 'What is your github username'
+            message: 'What is your github username?'
         },
             // Questions Email
         {
@@ -86,7 +86,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'license',
-            message: 'What is the license for this project'
+            message: 'What is the license for this project?'
         }
     ]);
 };

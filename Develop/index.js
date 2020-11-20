@@ -34,10 +34,59 @@ const questions = () => {
                 }
             }
         },
+            // TABLE OF CONTENTS
         {
             type: 'input',
             name: 'tableOfContents',
             message: 'Enter a table of contents',
+        },
+            // INSTALLATION
+        {
+            type: 'text',
+            name: 'install',
+            message: 'Type in some installation intructions: '
+        },
+            // USAGE
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Enter usage instructions'
+        },
+            // Contributing
+        {
+            type: 'input',
+            name: 'contribute',
+            message: 'Enter contributing intructions'
+        },
+            // Tests
+        {
+            type: 'type',
+            name: 'tests',
+            message: 'Test out the code'
+        },
+            // Questions 
+        {
+            type: 'text',
+            name: 'github',
+            message: 'What is your github username'
+        },
+            // Questions Email
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your current email?'
+        },
+            // Credits
+        {
+            type: 'input',
+            name: 'credits',
+            message: 'Who contributed to making this project?'
+        },
+            // License
+        {
+            type: 'input',
+            name: 'license',
+            message: 'What is the license for this project'
         }
     ]);
 };

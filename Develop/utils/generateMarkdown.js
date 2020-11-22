@@ -5,27 +5,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
 
-  const tableOfContents = () => {
-    const tableContent = data.tableOfContents;
-    const newTable = tableContent.split(' ');
-    [ one, two, three, four, five ] = newTable;
-      if (one === undefined) {
-        one = '';
-      } 
-      if (two === undefined) {
-        two = '';
-      } 
-      if (three === undefined) {
-        three = '';
-      } 
-      if (four === undefined) {
-        four = '';
-      } 
-      if (five === undefined) {
-        five = '';
-      }
-  }
-
   const installation = () => {
     const install = data.install;
     const newInstall = install.split(' ');
@@ -66,7 +45,6 @@ function generateMarkdown(data) {
       five = '';
     }
   }
-  tableOfContents();
   installation();
   contributing();
   return `
@@ -75,35 +53,38 @@ function generateMarkdown(data) {
   ## Description
     ${data.description}
   ## Table of contents
+  - [Installation](#install)
+  - [Usage](#usage)
+  - [Contributing](#contribute)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  - [Credits](#credits)
+  - [License](#license)
+
+  ## Installation <a id="install"></a>
     ${one}
     ${two}
     ${three}
     ${four}
     ${five}
-  ## Installation
-    ${one}
-    ${two}
-    ${three}
-    ${four}
-    ${five}
-  ## Usage
+  ## Usage <a id="usage"></a>
     ${data.usage}
-  ## Contributing
+  ## Contributing <a id="contribute"></a>
     ${one}
     ${two}
     ${three}
     ${four}
     ${five}
-  ## Tests
+  ## Tests <a id="tests"></a>
     ${data.tests}
-  ## Questions
+  ## Questions <a id="questions"></a>
   ###  Github: 
-    ${data.github}
+    
   ###  Email: 
     ${data.email}
-  ## Credits
+  ## Credits <a id="credits"></a>
     ${data.credits}
-  ## License
+  ## License <a id="license"></a>
     ${data.license}
 `;
 }

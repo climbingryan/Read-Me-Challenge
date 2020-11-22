@@ -34,12 +34,6 @@ const questions = () => {
                 }
             }
         },
-            // TABLE OF CONTENTS *****
-        {
-            type: 'input',
-            name: 'tableOfContents',
-            message: 'Enter a table of contents: (Max-5)',
-        },
             // INSTALLATION *******
         {
             type: 'text',

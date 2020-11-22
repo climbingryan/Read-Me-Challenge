@@ -44,7 +44,7 @@ const questions = () => {
         {
             type: 'text',
             name: 'install',
-            message: 'Type in some installation intructions: '
+            message: 'Type in some installation intructions: (Max-5)'
         },
             // USAGE
         {

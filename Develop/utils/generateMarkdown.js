@@ -79,7 +79,7 @@ function generateMarkdown(data) {
     ${data.tests}
   ## Questions <a id="questions"></a>
   ###  Github: 
-    
+  [Github Account](https://github.com/${data.github})
   ###  Email: 
     ${data.email}
   ## Credits <a id="credits"></a>

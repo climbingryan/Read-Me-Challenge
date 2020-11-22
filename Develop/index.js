@@ -84,9 +84,10 @@ const questions = () => {
         },
             // License
         {
-            type: 'input',
+            type: 'checkbox',
             name: 'license',
-            message: 'What is the license for this project?'
+            message: 'What is the license for this project?',
+            choices: ['MIT', 'Apache', 'GPL']
         }
     ]);
 };

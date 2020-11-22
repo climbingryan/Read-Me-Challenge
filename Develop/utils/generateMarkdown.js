@@ -68,7 +68,7 @@ function generateMarkdown(data) {
   }
   tableOfContents();
   installation();
-  contribute();
+  contributing();
   return `
   # ${data.title}
     
@@ -89,7 +89,11 @@ function generateMarkdown(data) {
   ## Usage
     ${data.usage}
   ## Contributing
-  - ${data.contribute}
+    ${one}
+    ${two}
+    ${three}
+    ${four}
+    ${five}
   ## Tests
     ${data.tests}
   ## Questions

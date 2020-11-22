@@ -1,9 +1,17 @@
 
-
-
-
 // function to generate markdown for README
 function generateMarkdown(data) {
+// const license = data.license;
+// console.log(license);
+
+//   if (license === 'MIT') {
+//     var badge = "['license']('https://img.shields.io/badge/MIT-MIT-red')";
+//     //badge.slice(0, badge.length);
+//  } else if (data.license === 'Apche') {
+  //   badge = [License]('https://img.shields.io/badge/Apache-Apche-green');
+  // } else if (data.license === 'GPL') {
+  //   badge = [License]('https://img.shields.io/badge/GPL-GPL-blue');
+  // }
 
   const installation = () => {
     const install = data.install;

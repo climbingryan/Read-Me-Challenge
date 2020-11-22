@@ -8,3 +8,5 @@ Download the zip or fork the repo to your local and go to the develop directory.
 
 [Walkthrough Video](https://drive.google.com/file/d/12zN38r4UQzC-On7hTd7FTbeXqcg3ZpmN/view)
 
+### Screenshot of terminal
+![readme-generator](https://user-images.githubusercontent.com/15613846/99920653-7dd4ce80-2cea-11eb-9dfc-dc97df11021f.JPG)
